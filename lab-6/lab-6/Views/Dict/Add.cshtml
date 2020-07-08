@@ -1,0 +1,22 @@
+﻿@using lab_6.Additions
+
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section header
+{
+    <header>
+        <h4>I'm header of Add</h4>
+    </header>
+}
+
+@AddFormHelper.AddForm(Html, ViewBag.PhoneDictionary)
+
+@section footer
+{
+    <footer>
+        <h4>I'm footer of Add</h4>
+    </footer>
+}

@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Delete";
+}
+
+<form class="delete-form" method="POST" action="/Dict/DeleteSave">
+    <div class="input-form">
+        <input id="recordId" name="recordId" type="text" value="@ViewBag.SelectedRecord.RecordId" hidden />
+        <input id="name" name="name" type="text" value="@ViewBag.SelectedRecord.Name" readonly />
+        <input id="phone" name="phone" type="phone" value="@ViewBag.SelectedRecord.Phone" readonly />
+    </div>
+    <div>
+        <input class="link-button" id="delete_button" type="submit" value="Удалить" />
+        <a class="cancel-link" href="/Dict/Index">Отказаться</a>
+    </div>
+</form>

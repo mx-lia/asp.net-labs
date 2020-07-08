@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab-7b", "lab-7b\lab-7b.csproj", "{BDD30708-2FFF-4DFD-B8DA-862758320074}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0D94A911-5A2A-4FCB-8B17-47D121F88BE6} = {0D94A911-5A2A-4FCB-8B17-47D121F88BE6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASMXService", "ASMXService\ASMXService.csproj", "{0D94A911-5A2A-4FCB-8B17-47D121F88BE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD30708-2FFF-4DFD-B8DA-862758320074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD30708-2FFF-4DFD-B8DA-862758320074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD30708-2FFF-4DFD-B8DA-862758320074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD30708-2FFF-4DFD-B8DA-862758320074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D94A911-5A2A-4FCB-8B17-47D121F88BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D94A911-5A2A-4FCB-8B17-47D121F88BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D94A911-5A2A-4FCB-8B17-47D121F88BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D94A911-5A2A-4FCB-8B17-47D121F88BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF6ECB51-3D33-4FB4-8CAD-E249E0936198}
+	EndGlobalSection
+EndGlobal

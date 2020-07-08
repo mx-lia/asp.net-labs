@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="form" class="main-form" method="GET">
+    <div class="link-list">
+        @foreach (var record in ViewBag.PhoneDictionary)
+        {
+            <input type="radio" id="@record.RecordID" name="recordID" value="@record.RecordID" onchange="UpdateButtonState()" />
+            <label for="@record.RecordID">@record</label>
+            <br />
+        }
+    </div>
+    <div>
+        <input class="link-button" type="submit" value="Добавить" formaction="/Dict/Add" />
+        <input name="updateButton" class="link-button" type="submit" value="Изменить" formaction="/Dict/Update/" onclick="OnClick(event)" disabled />
+        <input name="deleteButton" class="link-button" type="submit" value="Удалить" formaction="/Dict/Delete/" onclick="OnClick(event)" disabled />
+    </div>
+</form>
+

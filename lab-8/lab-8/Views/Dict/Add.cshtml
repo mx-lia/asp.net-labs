@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Add";
+}
+
+<form class="add-form" method="POST" action="/Dict/AddSave">
+    <div class="link-list">
+        @foreach (var record in ViewBag.PhoneDictionary)
+        {
+            <div>
+                <span>@record.Name</span>
+                <span>@record.Phone</span>
+            </div>
+        }
+    </div>
+    <div class="input-form">
+        <input name="name" type="text" />
+        <input name="phone" type="phone" />
+    </div>
+    <div>
+        <input class="link-button" type="submit" value="Добавить" />
+        <a class="cancel-link" href="/Dict/Index">Отказаться</a>
+    </div>
+</form>

@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Update";
+}
+
+<form class="update-form" method="POST" action="/Dict/UpdateSave">
+    <div class="link-list">
+        @foreach (var record in ViewBag.PhoneDictionary)
+        {
+            <div>
+                <span>@record.Name</span>
+                <span>@record.Phone</span>
+            </div>
+        }
+    </div>
+    <div class="input-form">
+        <input id="recordId" name="recordId" type="text" value="@ViewBag.SelectedRecord.RecordId" hidden />
+        <input id="name" name="name" type="text" value="@ViewBag.SelectedRecord.Name" />
+        <input id="phone" name="phone" type="phone" value="@ViewBag.SelectedRecord.Phone" />
+    </div>
+    <div>
+        <input class="link-button" id="update_button" type="submit" value="Изменить" />
+        <a class="cancel-link" href="/Dict/Index">Отказаться</a>
+    </div>
+</form>

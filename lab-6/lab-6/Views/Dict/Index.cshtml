@@ -1,0 +1,35 @@
+﻿@*@using dll_json;*@
+@using dll_sql;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section header
+{
+    <header>
+        <h4>I'm header of Index</h4>
+    </header>
+}
+
+<form id="form" class="main-form" method="GET">
+    <div class="link-list">
+        @foreach (Record record in ViewBag.PhoneDictionary)
+        {
+            Html.RenderPartial("_PartialRecord", record);
+        }
+    </div>
+    <div>
+        <input class="link-button" type="submit" value="Добавить" formaction="/Dict/Add" />
+        <input name="updateButton" class="link-button" type="submit" value="Изменить" formaction="/Dict/Update/" onclick="OnClick(event)" disabled />
+        <input name="deleteButton" class="link-button" type="submit" value="Удалить" formaction="/Dict/Delete/" onclick="OnClick(event)" disabled />
+    </div>
+</form>
+
+@section footer
+{
+    <footer>
+        <h4>I'm footer of Index</h4>
+    </footer>
+}

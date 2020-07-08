@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<form id="form" class="main-form" method="GET">
+    <div class="link-list">
+        @foreach (var record in ViewBag.PhoneDictionary)
+        {
+            <input type="radio" id="@record.RecordId" name="recordId" value="@record.RecordId" onchange="UpdateButtonState()" />
+            <label for="@record.RecordId">@record</label>
+            <br />
+        }
+    </div>
+    <div>
+        <input class="link-button" type="submit" value="Добавить" formaction="/Dict/Add" />
+        <input name="updateButton" class="link-button" type="submit" value="Изменить" formaction="/Dict/Update/" onclick="OnClick(event)" disabled />
+        <input name="deleteButton" class="link-button" type="submit" value="Удалить" formaction="/Dict/Delete/" onclick="OnClick(event)" disabled />
+    </div>
+</form>

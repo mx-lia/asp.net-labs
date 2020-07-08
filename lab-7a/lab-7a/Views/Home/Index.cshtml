@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/MainStyle.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/ApiScript.js"></script>
+</head>
+<body>
+    <div>
+        <div id="tableBlock"></div>
+        <div id="editBlock">
+            <p><b>Edit record</b></p>
+            <table>
+                <tr><td><input type="hidden" id="editId" /></td><td></td></tr>
+                <tr><td><label>Name: </label></td><td><input type="text" id="editName" /></td></tr>
+                <tr><td><label>Phone: </label></td><td><input type="text" id="editPhone" /></td></tr>
+            </table>
+            <button id="editRecord">Save</button>
+        </div>
+        <div id="createBlock">
+            <p><b>Add record</b></p>
+            <table>
+                <tr><td><label>Name: </label></td><td><input type="text" id="addName" /></td></tr>
+                <tr><td><label>Phone: </label></td><td><input type="text" id="addPhone" /></td></tr>
+            </table>
+            <button id="addRecord">Save</button>
+        </div>
+    </div>
+</body>
+</html>

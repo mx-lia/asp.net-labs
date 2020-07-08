@@ -1,0 +1,22 @@
+﻿@using lab_6.Additions
+
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section header
+{
+    <header>
+        <h4>I'm header of Update</h4>
+    </header>
+}
+
+@UpdateFormHelper.UpdateForm(Html, ViewBag.PhoneDictionary, ViewBag.SelectedRecord)
+
+@section footer
+{
+    <footer>
+        <h4>I'm footer of Update</h4>
+    </footer>
+}
